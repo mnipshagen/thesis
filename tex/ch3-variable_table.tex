@@ -1,0 +1,40 @@
+\begin{table}[ht]
+    \centering
+    \mycaption{Variable Overview}{An overview of the most relevant variables for this work}
+    \label{tab:dataset_variables}
+    \rowcolors{2}{}{light-gray}
+    \begin{tabular}{p{.13\linewidth} p{.25\linewidth} p{.52\linewidth}}
+        \textbf{Variable} & \textbf{Name \& Location} & \textbf{Description}\\
+        \hline
+        ID\_t & All & The unique, pseudonomized id identifying a particular student\\
+        spell & All spell files & The spell id for a particulat student in a particular file \\
+        subspell & All spell files & Identifier whether the spell is completed and integrated or ongoing\\
+        wave & CATI / CAWI & The wave the interview was in \\
+        ts15218 & VocTrain%, Successful completion of vocational training program
+            & The target variable holding whether the spell was completed successfully\\
+        ts15201 & VocTrain & The kind of educational institution (university, university of applied science, private college, etc.)\\
+        ts15221\_v1 & VocTrain & The pursued degree\\
+        tg02001 & CATI & Degree of the study programme as of first interview
+    \end{tabular}
+\end{table}
+\begin{table}[ht]
+    \centering
+    \mycaption{Files of NEPS used}{An overview over the used files of the dataset. Files dropped due to not providing enough data are not listed.}
+    \label{tab:dataset_files}
+    \rowcolors{2}{}{light-gray}
+    \begin{tabular}{p{.2\linewidth} p{.525\linewidth} p{.175\linewidth}}
+        \textbf{Filename} & \textbf{Description} & \textbf{\# Variables}\\
+        \hline
+        pTargetCATI & Computer Assisted Telephone Interview, one of two sources of information & 911\\
+        pTargetCAWI & Computer Assisted Web Interview, one of two sources of information & 1285\\
+        spEmp & Spells of employment & 168\\
+        spGap & Gap years / spells & 27\\
+        spInternship & Mandatory and voluntary internships done & 47\\
+        spMilitary & Miliatrian and civilian spells & 26\\
+        spPartner & Partners and relationships & 141\\
+        spSchool & Primary and secondary education & 81\\
+        spSibling & Siblings & 11\\
+        spUnemp & Spells of unemployment & 34\\
+        spVocTrain & Tertiary education and apprenticeships & 195
+    \end{tabular}
+\end{table}

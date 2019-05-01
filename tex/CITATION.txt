@@ -1,0 +1,62 @@
+  ================================================================
+     REMINDER: CITATION GUIDELINES FOR NEPS SCIENTIFIC USE DATA
+  ================================================================
+
+Individuals working with the NEPS data from the Starting Cohort First-Year Students
+are obligated to mention their use of the data within their publication
+appropriately, including the used version and the corresponding DOI, by using
+the following reference:
+
+This paper uses data from the National Educational Panel Study (NEPS):
+Starting Cohort First-Year Students, 10.5157/NEPS:SC5:11.0.0. From 2008 to 2013,
+NEPS data was collected as part of the Framework Program for the Promotion of
+Empirical Educational Research funded by the German Federal Ministry of
+Education and Research (BMBF). As of 2014, NEPS is carried out by the Leibniz
+Institute for Educational Trajectories (LIfBi) at the University of Bamberg in
+cooperation with a nationwide network.
+
+In addition, all publications using NEPS data are required to cite the following
+reference:
+
+Blossfeld, H.-P., Rossbach, H.-G, & von Maurice, J. (Eds.) (2011). Education as a
+Lifelong Process -- The German National Educational Panel Study (NEPS).
+[Special Issue] Zeitschrift fuer Erziehungswissenschaft: 14.
+
+LIfBi has to be notified of any kind of publication resulting from the use of
+NEPS data four weeks prior to the publication, with an electronic version of the
+printed version having to be provided together with the notification (by mail
+fdz@lifbi.de). After the publication, LIfBi is to be provided with a special
+print or copy of the publication.
+
+
+
+
+  ===================================================================
+     ERINNERUNG: ZITATIONSRICHTLINIE FUER NEPS SCIENTIFIC USE FILES
+  ===================================================================
+
+Personen, die mit den NEPS-Daten der Startkohorte Studierende
+arbeiten, sind verpflichtet, in ihren Publikationen an geeigneter Stelle die
+Verwendung der Daten inkl. Kennzeichnung der jeweiligen Datenversion mit
+entsprechender DOI durch folgenden Hinweis anzuzeigen:
+
+Diese Arbeit nutzt Daten des Nationalen Bildungspanels (NEPS):
+Startkohorte Studierende, 10.5157/NEPS:SC5:11.0.0. Die Daten des NEPS wurden von
+2008 bis 2013 als Teil des Rahmenprogramms zur Foerderung der empirischen
+Bildungsforschung erhoben, welches vom Bundesministerium fuer Bildung und
+Forschung (BMBF) finanziert wurde. Seit 2014 wird NEPS vom Leibniz-Institut fuer
+Bildungsverlaeufe e.V. (LIfBi) an der Otto-Friedrich-Universitaet Bamberg in
+Kooperation mit einem deutschlandweiten Netzwerk weitergefuehrt.
+
+Zusaetzlich ist in allen Publikationen mit NEPS-Daten die folgende Referenz zu
+zitieren:
+
+Blossfeld, H.-P., H.-G. Rossbach und J. von Maurice (Hrsg.) (2011). Education as
+a Lifelong Process -- The German National Educational Panel Study (NEPS).
+Zeitschrift fuer Erziehungswissenschaft: Sonderheft 14.
+
+Jede Art der Veroeffentlichung ist vier Wochen vor der Veroeffentlichung
+anzuzeigen. Im Rahmen der Anzeige ist eine elektronische Version der
+Druckfassung der Publikation an fdz@lifbi.de zu senden. Nach der
+Veroeffentlichung ist dem LIfBi ein Sonderdruck der Publikation oder eine Kopie
+zu ueberlassen.

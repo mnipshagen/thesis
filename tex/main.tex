@@ -1,0 +1,212 @@
+% !TeX root = ./main.tex
+
+\documentclass[fontsize=12pt]{scrartcl}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{csquotes}
+\usepackage[
+	backend=biber,
+	style=numeric,
+	sorting=ynt
+]{biblatex}
+\usepackage{graphicx}
+\graphicspath{{images/}}
+\usepackage[table,x11names,dvipsnames,table]{xcolor}
+\addbibresource{references.bib}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[
+    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={blue!50!black},
+	urlcolor={blue!80!black}]{hyperref}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{multirow}
+\usepackage[automark,headsepline]{scrlayer-scrpage}
+\usepackage{vmargin}
+\usepackage{hyphenat}
+\usepackage{subcaption}
+\usepackage[section]{placeins}
+\usepackage{pdfpages}
+\usepackage[inline]{enumitem}
+\usepackage[font=small]{caption}
+\usepackage{wrapfig}
+% \usepackage[toc,page]{appendix}
+\usepackage[smartEllipses]{markdown}
+\usepackage{chngcntr}
+\counterwithin{figure}{section}
+\counterwithin{table}{section}
+
+\definecolor{light-gray}{gray}{0.9} 
+% \setmarginsrb{3.5 cm}{1.5 cm}{2.5 cm}{2 cm}{1 cm}{1.5 cm}{1 cm}{1.5 cm}
+\setlength{\parskip}{10pt plus 1pt minus 1pt}
+\linespread{1.3}
+
+\title{Analysis of Courses of Study to Predict Consequences of Educational Choices Using Machine Learning}
+\author{Moritz Nipshagen}
+\date{\today}											% Date
+
+\makeatletter
+\let\thetitle\@title
+\newcommand\theauthor{M. Nipshagen}
+\let\thedate\@date	
+\makeatother
+
+\clearpairofpagestyles
+\cfoot[\pagemark]{\pagemark}
+% \lehead{\headmark}
+\lohead{\nohyphens{\parbox{0.6\textwidth}{\small{\thetitle}}}}
+% \rohead{\headmark}
+\rohead{\small{\theauthor}}
+\pagestyle{scrheadings}
+
+% \pagestyle{fancy}
+% \fancyhf{}
+% \rhead{\small{\theauthor}}
+% \lhead{\small{\thetitle}}
+% \cfoot{\thepage}
+
+\newcommand{\mycaption}[2]{\caption[#1]{#1\\#2}}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagenumbering{gobble}
+\begin{titlepage}
+	{
+		\centering
+		\vspace*{0.5 cm}
+		\includegraphics[scale = 0.25]{wappen.png}\\[1.0 cm]	% University Logo
+		\textsc{\LARGE Osnabrück University}\\
+		{\Large School of Human Sciences\\
+		Institute of Cognitive Science}\\[1.0 cm]	% University Name
+		{\large Bachelor Thesis\\
+		In Partial Fulfilment of Requirements\\
+		For the Degree of Bachelor of Science}\\[0.5 cm]				% Course Name
+		% \textsc{\Large Course Code: 8.3304}\\[0.5 cm]				% Course Code
+		\rule{\linewidth}{0.2 mm} \\[0.4 cm]
+		{ \LARGE \bfseries \thetitle }\\
+		\rule{\linewidth}{0.2 mm} \\[0.75 cm]
+		{\large 
+			Moritz Nipshagen\\
+			April, 2019\\
+		}
+	}
+	\vfill
+	{\noindent
+		% Moritz  Nipshagen\\
+		B.Sc. Cognitive Science, 7th Semester\\
+		963496\\
+		\href{mailto:mnipshagen@uos.de}{mnipshagen@uni-osnabrueck.de}\\
+		Schlosswall 17\\
+		49074 Osnabrück
+	}
+	\par
+	{\noindent
+		1st Supervisor: Dr. Tobias Thelen\\
+		2nd Supervisor: Prof. Dr.-phil. Kai-Uwe Kühnberger
+	}
+	
+	
+	% {\large \thedate}\\[2 cm]
+	
+\end{titlepage}
+\pagebreak
+\vspace*{\fill}
+{
+	\hfil \Large\textit{Page intentionally left blank} \hfil
+}
+\vspace*{\fill}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\include{abstract}
+\pagebreak
+
+\tableofcontents
+\listoftables
+\listoffigures
+\pagebreak
+
+\pagenumbering{arabic}
+\setcounter{page}{1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\include{ch1-introduction}
+
+\include{ch2-dataset}
+
+\include{ch3-methodology}
+
+\include{ch4-results}
+
+\include{ch5-discussion}
+
+\include{ch6-conclusion}
+
+%% Behold the mighty bibliography
+\addcontentsline{toc}{section}{References}
+\nocite{*}
+\printbibliography
+
+% and all the stuff
+\pagebreak
+\addcontentsline{toc}{section}{Appendix}
+\appendix
+% \section{Figures}
+% \subsection{Methodology}
+% \label{apx:methodology}
+% \subsection{Results}
+% \label{apx:results}
+
+\section{Code Readme}
+\label{apx:readme}
+% \includepdf[pages={1}, width=.8\textwidth, pagecommand={}]{README.pdf}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=.85\textwidth]{README.pdf}
+\end{figure}
+
+\section{NEPS}
+\subsection{Datamanual}
+Outlining the overall structure of the panel study, as well as explaining the variable and file naming, file structure and contents. 192 pages total. For full documentation see attached medium or \href{https://www.neps-data.de/en-us/datacenter/dataanddocumentation/startingcohortfirst-yearstudents/documentation.aspx}{neps-data.de}.
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=.85\textwidth]{SC5_11-0-0_Datamanual.pdf}
+\end{figure}
+	% \includepdf[pages={1-5}, width=.8\textwidth, pagecommand={}]{../docs/SC5_11-0-0_Datamanual.pdf}
+	
+\subsection{Codebook}
+An overview of all variables of all files of the NEPS dataset, with excerpts of variable values and count of values for each variable. 5173 pages total. For full documentation see attached medium or \href{https://www.neps-data.de/en-us/datacenter/dataanddocumentation/startingcohortfirst-yearstudents/documentation.aspx}{neps-data.de}.
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=\textwidth]{SC5_11-0-0_Codebook_en.pdf}
+\end{figure}
+% \includepdf[pages={1-4}, width=\textwidth, pagecommand={}, nup=1x2]{../docs/SC5_11-0-0_Codebook_en.pdf}
+
+\pagebreak
+
+\vspace{3.5cm}
+
+\hspace*{\fill}\textbf{\Large Declaration of Authorship}\hspace*{\fill}
+
+\vspace{1.5cm}
+
+I hereby certify that the work presented here is, to the best of my knowledge and belief, original and the result of my own investigations, except as acknowledged, and has not been submitted, either in part or whole, for a degree at this or any other university.
+
+\vspace{1.5cm}
+
+\begin{tabular}{p{.15\textwidth}p{.5\textwidth}}
+	Signature: & \hrulefill \\
+	& Moritz Nipshagen
+\end{tabular}
+
+\vspace{1.5cm}
+
+\begin{tabular}{p{.15\textwidth}p{.5\textwidth}}
+	Signature: & \hrulefill \\
+	& city, date
+\end{tabular}
+
+
+\end{document}

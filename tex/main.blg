@@ -1,0 +1,20 @@
+[0] Config.pm:354> INFO - This is Biber 2.7
+[0] Config.pm:357> INFO - Logfile is 'main.blg'
+[31] biber-MSWIN32:303> INFO - === 
+[55] Biber.pm:359> INFO - Reading 'main.bcf'
+[153] Biber.pm:832> INFO - Using all citekeys in bib section 0
+[167] Biber.pm:3670> INFO - Processing section 0
+[186] Biber.pm:3840> INFO - Looking for bibtex format file 'references.bib' for section 0
+[198] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
+[215] bibtex.pm:1292> INFO - Found BibTeX data source 'references.bib'
+[222] Utils.pm:164> WARN - year field '08.04.2019' in entry 'HighLevelExpertGrouponArtificialIntelligence.08.04.2019' is not an integer - this will probably not sort properly.
+[234] Utils.pm:164> WARN - Entry 'Osada.2019' (references.bib): Invalid format '12.03.2019' of date field 'eventdate' - ignoring
+[236] Utils.pm:164> WARN - year field '2001‐' in entry 'EricJones.2001' is not an integer - this will probably not sort properly.
+[300] Utils.pm:164> WARN - Entry '.2019' (references.bib): Invalid format '12.03.2019' of date field 'eventdate' - ignoring
+[382] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[382] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[382] Biber.pm:3499> INFO - Sorting list 'ynt/global/' of type 'entry' with scheme 'ynt' and locale 'en-US'
+[382] Biber.pm:3505> INFO - No sort tailoring available for locale 'en-US'
+[428] bbl.pm:608> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[439] bbl.pm:712> INFO - Output to main.bbl
+[443] Biber.pm:109> INFO - WARNINGS: 4
